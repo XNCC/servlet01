@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<servlet>
+		<servlet-name>login_service</servlet-name>
+		<servlet-class>service.login_service</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>login_service</servlet-name>
+		<url-pattern>/service.login_service</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>admin_login_service</servlet-name>
+		<servlet-class>service.admin_login_service</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>admin_login_service</servlet-name>
+		<url-pattern>/service.admin_login_service</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>table_insert</servlet-name>
+		<servlet-class>service.table_insert</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>table_insert</servlet-name>
+		<url-pattern>/service.table_insert</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>table_select</servlet-name>
+		<servlet-class>service.table_select</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>table_select</servlet-name>
+		<url-pattern>/service.table_select</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>table_update</servlet-name>
+		<servlet-class>service.table_update</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>table_update</servlet-name>
+		<url-pattern>/service.table_update</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>table_delete</servlet-name>
+		<servlet-class>service.table_delete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>table_delete</servlet-name>
+		<url-pattern>/service.table_delete</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>
